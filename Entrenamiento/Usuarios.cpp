@@ -52,7 +52,7 @@ Usuarios Cargar_Usuarios(){ ///carga registros por un registro.
     reg.Nac.Anio=anio;
 
     cout<<"Peso:        "; cin>>reg.Peso;
-    while(reg.Peso<50){///VALIDO EL PESO QUE SEA >50 KGS IMC MINIMA
+    while(reg.Peso<0){
         cout<<">Peso:        "; cin>>reg.Peso;
     }
     cout<<"Perfil:      "; cin>>Perfil;

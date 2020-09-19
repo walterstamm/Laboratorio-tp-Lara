@@ -448,3 +448,57 @@
 	"Usuarios.h"
 	"configuracion.h"
 
+1600527921 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\configuracion.cpp
+	<iostream>
+	<cstdlib>
+	"configuracion.h"
+	"ArchivosConfiguraciones.h"
+
+1600527921 c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\configuracion.h
+
+1600527921 c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.h
+
+1600527921 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\entrenar.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"Usuarios.h"
+
+1600546068 c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\usuarios.h
+
+1600029864 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\main.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600527921 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\menues.cpp
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+	"configuracion.h"
+
+1600546068 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.cpp
+	<iostream>
+	<ctime>
+	<time.h>
+	<string.h>
+	<stdlib.h>
+	"ArchivosConfiguraciones.h"
+
+1600546068 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\usuarios.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
