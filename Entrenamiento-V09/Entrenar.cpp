@@ -2,7 +2,6 @@
 #include<cstdlib>
 #include<cstdio>
 #include<cstring>
-
 using namespace std;
 #include "Usuarios.h"
 

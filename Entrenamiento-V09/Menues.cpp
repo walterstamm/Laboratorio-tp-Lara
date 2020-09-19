@@ -9,6 +9,7 @@
 using namespace std;
 
 #include "Usuarios.h"
+#include "configuracion.h"
 
 void Menu(){
     Usuarios reg;
@@ -33,7 +34,7 @@ void Menu(){
                 Menu_Entrenamiento();
             break;
             case 3:
-
+                Menu_Reportes();
             break;
             case 4:
 
@@ -124,6 +125,33 @@ void Menu_Entrenamiento(){
             break;
             case 5:
                 Listar_Entrenamiento();
+            break;
+            case 0:
+                return;
+            break;
+        }
+    }
+}
+
+void Menu_Reportes(){
+    Entrenamiento ent;
+    int Opcion;
+    while(true){
+        system("cls");
+        cout<<"\n===========MENU ENTRENAMIENTOS================";
+        cout<<"\n01.- REALIZAR COPIA DE SEGURIDAD..............";
+        cout<<"\n02.- RESTAURAR COPIA DE SEGURIDAD.............";
+        cout<<"\n==============================================";
+        cout<<"\n00.- VOLVER AL MENU PRINCIPAL.................";
+        cout<<"\n==============================================";
+        cout<<"\n       Opción:"; cin>>Opcion;
+
+        switch(Opcion){
+            case 1:
+                RealizarCopiaSeguridad();
+            break;
+            case 2:
+                RestaurarCopiaSeguridad();
             break;
             case 0:
                 return;

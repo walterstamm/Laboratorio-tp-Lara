@@ -341,3 +341,37 @@
 	<iostream>
 	"Usuarios.h"
 
+1600469631 source:c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\main.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600488059 c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\usuarios.h
+
+1600488400 source:c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\configuracion.cpp
+	<iostream>
+	"configuracion.h"
+
+1600488400 c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\configuracion.h
+
+1600488400 source:c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\menues.cpp
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+	"configuracion.h"
+
+1600488822 source:c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\archivosconfiguraciones.cpp
+	<iostream>
+	<ctime>
+	<string.h>
+	"ArchivosConfiguraciones.h"
+
+1600488822 c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\archivosconfiguraciones.h
+

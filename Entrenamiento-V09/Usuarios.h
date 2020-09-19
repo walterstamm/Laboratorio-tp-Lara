@@ -47,6 +47,7 @@ bool validacionFecha(int ,int , int);
 void Menu();
 void Menu_Usuarios();
 void Menu_Entrenamiento();
+void Menu_Reportes();
 
 ///     CONTROLES
 bool Control_Fecha(int, int, int);
