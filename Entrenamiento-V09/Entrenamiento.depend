@@ -315,14 +315,14 @@
 	<iostream>
 	"Usuarios.h"
 
-1600469473 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\entrenar.cpp
+1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\entrenar.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
 	<cstring>
 	"Usuarios.h"
 
-1600476731 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\usuarios.h
+1600526929 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\usuarios.h
 
 1600469473 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\main.cpp
 	<ctime>
@@ -333,13 +333,14 @@
 	<iostream>
 	"Usuarios.h"
 
-1600469473 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\menues.cpp
+1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\menues.cpp
 	<cstdlib>
 	<cstdio>
 	<cstring>
 	<clocale>
 	<iostream>
 	"Usuarios.h"
+	"configuracion.h"
 
 1600469631 source:c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\main.cpp
 	<ctime>
@@ -374,4 +375,31 @@
 	"ArchivosConfiguraciones.h"
 
 1600488822 c:\users\usuario\downloads\laboratorio-tp-lara\entrenamiento-v09\archivosconfiguraciones.h
+
+1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\configuracion.cpp
+	<iostream>
+	<cstdlib>
+	"configuracion.h"
+	"ArchivosConfiguraciones.h"
+
+1600526929 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\configuracion.h
+
+1600526929 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\archivosconfiguraciones.h
+
+1600526925 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\usuarios.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600528090 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento-v09\archivosconfiguraciones.cpp
+	<iostream>
+	<ctime>
+	<time.h>
+	<string.h>
+	<stdlib.h>
+	"ArchivosConfiguraciones.h"
 
