@@ -15,6 +15,7 @@ Usuarios Cargar_Usuarios(){ ///carga registros por un registro.
     Usuarios reg;
     int dia, mes, anio, id, pos;
     bool carga=false,valido=false;
+    char Perfil;
     cout<<"Ingresar ID: "; cin>>id;
     while(Buscar_Usuario(id)>=0){
         cout<<"YA EXISTE EL ID\n";
@@ -54,7 +55,14 @@ Usuarios Cargar_Usuarios(){ ///carga registros por un registro.
     while(reg.Peso<50){///VALIDO EL PESO QUE SEA >50 KGS IMC MINIMA
         cout<<">Peso:        "; cin>>reg.Peso;
     }
-    cout<<"Perfil:      "; cin>>reg.Perfil;
+    cout<<"Perfil:      "; cin>>Perfil;
+    while(Valido_Perfil(Perfil)==false){
+        cout<<"Perfil:      "; cin>>Perfil;
+    }
+
+
+
+    reg.Perfil=Perfil;
     cout<<"Apto Médico: "; cin>>reg.Apto_Med;
     reg.Estado=true;
     return reg;
@@ -312,6 +320,17 @@ bool Guardar_Usuario(Usuarios registro,int posicion_Archivo){
     fclose(f);
     return true;
 }
+
+bool Valido_Perfil(char Perfil){
+    bool resultado;
+    if(Perfil=='a'||Perfil=='A'||Perfil=='b'||Perfil=='B'||Perfil=='c'||Perfil=='C'){
+        resultado= true;
+    }else{
+        resultado=false;
+    }
+    return resultado;
+}
+
 ///     FUNCIONES ENTRENAMIENTO
 
 void Cargar_Nuevo_Usuario(){
