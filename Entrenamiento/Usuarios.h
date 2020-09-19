@@ -42,6 +42,7 @@ bool Valido_Perfil(char);
 Fecha Cargar_Fecha();
 void Mostrar_Fecha(Fecha);
 bool validacionFecha(int ,int , int);
+bool validacionMayor(int, int, int);
 
 ///     MENU
 void Menu();

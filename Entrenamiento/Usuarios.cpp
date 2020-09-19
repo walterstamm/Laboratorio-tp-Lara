@@ -36,9 +36,9 @@ Usuarios Cargar_Usuarios(){ ///carga registros por un registro.
     cout<<"Fecha Día:   "; cin>>dia;
     cout<<"Fecha Mes:   "; cin>>mes;
     cout<<"Fecha Año:   "; cin>>anio;
-    while(carga==false||valido==false){                    ///VERIFICO QUE SE CUMPLA UNA FECHA VALIDA.
+    while(carga==false||valido==false){///VERIFICO QUE SE CUMPLA UNA FECHA VALIDA.
             carga = Control_Fecha(dia, mes, anio);
-            valido = validacionFecha(dia,mes,anio);
+            valido = validacionMayor(dia,mes,anio);
             if(carga==false||valido==false){
                 cout<<">Reingrese la fecha";
                 cout<<">Fecha Día:   "; cin>>dia;
@@ -207,6 +207,32 @@ bool validacionFecha(int dia,int mes, int anio){
         }
 
     valido=false;
+    return valido;
+}
+
+bool validacionMayor(int dia,int mes, int anio){
+    time_t tiempo;
+    struct tm *tmPtr;
+    tiempo = time(NULL);
+    tmPtr = localtime(&tiempo);
+    //tmPtr->tm_year+1900;
+
+
+     bool valido=false;
+    if((tmPtr->tm_year+1900-anio)>13){
+        valido=true;
+        return valido;
+    }else{
+        if(((tmPtr->tm_year+1900-anio)==13) && ((tmPtr->tm_mon+1)-mes>0)){
+            valido=true;
+            return valido;
+        }else{
+            if(((tmPtr->tm_year+1900-anio)==13)&&(tmPtr->tm_mon+1)-mes==0 && (dia<=tmPtr->tm_mday)){
+                valido=true;
+                return valido;
+        }
+        }
+    }
     return valido;
 }
 
