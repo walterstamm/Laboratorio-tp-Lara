@@ -223,7 +223,7 @@ void Modificar_Entrenamiento(){
     }
     system("cls");
     registro=Levantar_Entrenamiento(posicion_ID,valido);
-    if(valido==false){
+    if(*valido==false){
         cout<<"Hubo un error al intentar abrir el archivo";
         return;
     }
@@ -282,7 +282,7 @@ Entrenamiento Levantar_Entrenamiento(int posicion_ID,bool *valido){
     archivo=fopen("Entrenamiento.dat","rb");
     if(archivo==NULL){
             fclose(archivo);
-            valido=false;
+            *valido=false;
             return registro;
 
     }
