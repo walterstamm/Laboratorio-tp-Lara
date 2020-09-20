@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 #include <ctime>
+#include <cstdio>
+#include<stdlib.h>
 #include <string.h>
 #include "ArchivosConfiguraciones.h"
 #include "Usuarios.h"
@@ -96,7 +98,7 @@ return correcto;
 
 int GuardarUsuarioBKP_en_DAt(Usuarios *uno, int cant){
     int correcto;
-    FILE *p=fopen("usuarios.dat", "wb");
+    FILE *p=fopen("texto.dat", "wb");
     if(p==NULL){
         fclose(p);
         return -1;
@@ -145,7 +147,7 @@ return correcto;
 
 int TotalUsuarios(){
     int total;
-    FILE*p=fopen("usuarios.dat","rb");
+    FILE*p=fopen("texto.dat","rb");
         if(p==NULL){
             fclose(p);
             return -1;
@@ -173,7 +175,7 @@ return total;
 
 Usuarios TraerUsuario(int pos){
     Usuarios uno;
-    FILE *p=fopen("usuarios.dat","rb");
+    FILE *p=fopen("texto.dat","rb");
         if(p==NULL){
             uno.ID=-1;
             fclose(p);

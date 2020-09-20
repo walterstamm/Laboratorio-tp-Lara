@@ -229,7 +229,7 @@ void Modificar_Usuarios(){
         return;
     }
     registro=Levantar_Participantes(posicionArchivo,Valido_no_Error);
-    if(Valido_no_Error==false){
+    if(*Valido_no_Error==false){
         cout<<"Hubo un error al intentar abrir el archivo";
         return;
     }
@@ -297,7 +297,7 @@ Usuarios Levantar_Participantes(int posicionArchivo,bool *valido){
     FILE *f=fopen("texto.dat", "rb");
     if(f==NULL){
         fclose(f);
-        valido=false;
+        *valido=false;
         return registro;
     }
 
