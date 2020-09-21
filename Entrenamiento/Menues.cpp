@@ -65,8 +65,7 @@ void Menu_Usuarios(){
         switch(Opcion){
             case 1:
                 Cargar_Nuevo_Usuario();
-
-                            break;
+            break;
             case 2:
                 Modificar_Usuarios();
             break;
@@ -83,10 +82,6 @@ void Menu_Usuarios(){
             case 0:
                 return;
             break;
-            case 6:
-
-            break;
-
         }
     }
 
@@ -115,7 +110,6 @@ void Menu_Entrenamiento(){
                 Cargar_Nuevo_Entrenamiento();
             break;
             case 2:Modificar_Entrenamiento();
-
             break;
             case 3:
                 Listar_Entrenamiento_ID();

@@ -45,21 +45,60 @@ Entrenamiento Cargar_Entrenamiento(){ ///carga registros de Entrenamiento.
     Ent.Fecha_Entrenamiento.Mes=mes;
     Ent.Fecha_Entrenamiento.Anio=anio;
 
-    cout<<"Ingrese la Actividad: ";
+    cout<<"\nPara ingresar debera tener en cuenta: ";
+    cout<<"1 - Caminata, 2 -  Correr, 3 - Bicicleta, 4 - Natación y 5 - Pesas.\n";
+    cout<<" Natación y Pesas sólo pueden registrarse por Usuarios con el \n";
+    cout<<" Apto Médico.";
+    cout<<" Ingrese la Actividad: ";
     cin>>Actividad;
     while(carga==true){
         switch(Actividad){
             case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
+                cout<<"Ha seleccionado Caminata.\n";
+                system("pause");
                 carga=false;
-            break;
+                break;
+            case 2:
+                cout<<"Ha seleccionado Correr.\n";
+                system("pause");
+                carga=false;
+                break;
+            case 3:
+                cout<<"Ha seleccionado Bicicleta.\n";
+                system("pause");
+                carga=false;
+                break;
+            case 4:
+                while(Verificar_ApMedico(ID_Usuario)==false){
+                    cout<<"Para Natacion y Pesas deberá poseer el Apto Médico Aprobado.\n";
+                    cout<<"Cambie su elección\n";
+                    system("pause");
+                    cout<<">>>Ingrese la Actividad: ";
+                    cin>>Actividad;
+                    carga=true;
+                }
+                cout<<"Ha seleccionado Natación.\n";
+                system("pause");
+                carga=false;
+                break;
+            case 5:
+                while(Verificar_ApMedico(ID_Usuario)==false){
+                    cout<<"Para Natacion y Pesas deberá poseer el Apto Médico Aprobado.\n";
+                    cout<<"Cambie su elección\n";
+                    system("pause");
+                    cout<<">>>Ingrese la Actividad: ";
+                    cin>>Actividad;
+                    carga=true;
+                }
+                cout<<"Ha seleccionado Pesas.\n";
+                system("pause");
+                carga=false;
+                break;
             default:
                 cout<<">>>Ingrese la Actividad: ";
                 cin>>Actividad;
-            break;
+                carga=true;
+                break;
         }
     }
     Ent.Actividad=Actividad;
@@ -223,7 +262,7 @@ void Modificar_Entrenamiento(){
     }
     system("cls");
     registro=Levantar_Entrenamiento(posicion_ID,valido);
-    if(valido==false){
+    if(*valido==false){
         cout<<"Hubo un error al intentar abrir el archivo";
         return;
     }
@@ -282,15 +321,33 @@ Entrenamiento Levantar_Entrenamiento(int posicion_ID,bool *valido){
     archivo=fopen("Entrenamiento.dat","rb");
     if(archivo==NULL){
             fclose(archivo);
-            valido=false;
+            *valido=false;
             return registro;
-
     }
     fseek(archivo,posicion_ID*sizeof(Entrenamiento),SEEK_SET);
     fread(&registro,sizeof (Entrenamiento),1,archivo);
     fclose(archivo);
     return registro;
 }
+
+bool Verificar_ApMedico(int ID_Usuario){
+    Usuarios reg;
+    FILE *p;
+    p=fopen("texto.dat","rb");
+    if(p==NULL){
+        cout<<"No se pudo realizar la apertura del Archivo";
+        return 0;
+    }
+    while(fread(&reg, sizeof (Usuarios),1,p)){
+        if(ID_Usuario==reg.ID && reg.Estado==1){
+            return true;
+        }
+    }
+    fclose(p);
+    return false;
+}
+
+
 bool Guardar_Modificacion_Entranamiento(Entrenamiento registro,int posicionID){
     bool grabo;
     FILE *archivo=fopen("Entrenamiento.dat","rb+");

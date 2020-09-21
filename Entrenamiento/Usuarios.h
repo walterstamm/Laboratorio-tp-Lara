@@ -14,7 +14,7 @@ struct Usuarios{
     Fecha Nac;
     float Peso;
     char Perfil;
-    char Apto_Med;
+    bool Apto_Med;
     bool Estado;
 };
 
@@ -68,7 +68,7 @@ void Modificar_Entrenamiento();
 int Buscar_ID_Entrenamiento(int);
 Entrenamiento Levantar_Entrenamiento(int,bool *);
 bool Guardar_Modificacion_Entranamiento(Entrenamiento,int);
-
+bool Verificar_ApMedico(int);
 
 
 
