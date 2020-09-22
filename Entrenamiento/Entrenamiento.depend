@@ -511,3 +511,58 @@
 	<cstring>
 	"Usuarios.h"
 
+1600528090 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\archivosconfiguraciones.cpp
+	<iostream>
+	<ctime>
+	<time.h>
+	<string.h>
+	<stdlib.h>
+	"ArchivosConfiguraciones.h"
+
+1600526929 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\archivosconfiguraciones.h
+
+1600734558 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\entrenar.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"Usuarios.h"
+
+1600646800 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\usuarios.h
+
+1600656004 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\menues.cpp
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+	"configuracion.h"
+
+1600742954 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\configuracion.h
+
+1600542926 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\usuarios.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600741276 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\configuracion.cpp
+	<iostream>
+	<cstdlib>
+	"configuracion.h"
+	"ArchivosConfiguraciones.h"
+
+1600743695 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-2\entrenamiento-v09\main.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+	"configuracion.h"
+
