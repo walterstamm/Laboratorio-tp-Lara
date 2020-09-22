@@ -27,10 +27,10 @@ Entrenamiento Cargar_Entrenamiento(){ ///carga registros de Entrenamiento.
     }
     Ent.IDUsuario=ID_Usuario;/// FIN DE VALIDACION
 
-    cout<<"Ingrese la fecha dd mm aaaa :";  ///FECHA VALIDADA
+    cout<<"Ingrese la fecha dd/ mm /aaaa :\n";  ///FECHA VALIDADA
     cout<<"Fecha Día:   "; cin>>dia;
-    cout<<"Fecha Mes:   "; cin>>mes;
-    cout<<"Fecha Año:   "; cin>>anio;
+    cout<<"\tFecha Mes:   "; cin>>mes;
+    cout<<"\t\tFecha Año:   "; cin>>anio;
     while(carga==false){ ///VERIFICO QUE SE CUMPLA UNA FECHA VALIDA.
             carga = Control_Fecha(dia, mes, anio);
             ///valido = validacionFecha(dia,mes,anio);
@@ -45,58 +45,59 @@ Entrenamiento Cargar_Entrenamiento(){ ///carga registros de Entrenamiento.
     Ent.Fecha_Entrenamiento.Mes=mes;
     Ent.Fecha_Entrenamiento.Anio=anio;
 
-    cout<<"\nPara ingresar debera tener en cuenta: ";
-    cout<<"1 - Caminata, 2 -  Correr, 3 - Bicicleta, 4 - Natación y 5 - Pesas.\n";
-    cout<<" Natación y Pesas sólo pueden registrarse por Usuarios con el \n";
-    cout<<" Apto Médico.";
+    cout<<"\n Para ingresar debera tener en cuenta: \n";
+    cout<<" 1:Caminata, 2:Correr, 3:Bicicleta, 4:Natación, 5:Pesas.\n";
+    cout<<" Natación y Pesas debe tener el Apto Médico.\n\n";
+
     cout<<" Ingrese la Actividad: ";
     cin>>Actividad;
     while(carga==true){
         switch(Actividad){
             case 1:
                 cout<<"Ha seleccionado Caminata.\n";
-                system("pause");
                 carga=false;
                 break;
+
             case 2:
                 cout<<"Ha seleccionado Correr.\n";
-                system("pause");
                 carga=false;
                 break;
+
             case 3:
                 cout<<"Ha seleccionado Bicicleta.\n";
-                system("pause");
                 carga=false;
                 break;
+
             case 4:
-                while(Verificar_ApMedico(ID_Usuario)==false){
-                    cout<<"Para Natacion y Pesas deberá poseer el Apto Médico Aprobado.\n";
-                    cout<<"Cambie su elección\n";
-                    system("pause");
+                if(Verificar_ApMedico(ID_Usuario)==false){
+                    cout<<"Sin Apto Médico.\n";
+                    cout<<"Respete las condiciones\n";
                     cout<<">>>Ingrese la Actividad: ";
                     cin>>Actividad;
                     carga=true;
-                }
-                cout<<"Ha seleccionado Natación.\n";
-                system("pause");
-                carga=false;
+
+                }else{
+                    cout<<"Ha seleccionado Natación.\n";
+                    carga=false;
+                    }
+
                 break;
+
             case 5:
-                while(Verificar_ApMedico(ID_Usuario)==false){
-                    cout<<"Para Natacion y Pesas deberá poseer el Apto Médico Aprobado.\n";
-                    cout<<"Cambie su elección\n";
-                    system("pause");
+                if(Verificar_ApMedico(ID_Usuario)==false){
+                    cout<<"Sin Apto Médico.\n";
+                    cout<<"Respete las condiciones\n";
                     cout<<">>>Ingrese la Actividad: ";
                     cin>>Actividad;
                     carga=true;
-                }
-                cout<<"Ha seleccionado Pesas.\n";
-                system("pause");
-                carga=false;
+
+                }else{
+                    cout<<"Ha seleccionado Pesas.\n";
+                    carga=false;
+                    }
                 break;
+
             default:
-                cout<<">>>Ingrese la Actividad: ";
-                cin>>Actividad;
                 carga=true;
                 break;
         }
@@ -242,6 +243,7 @@ bool Valida_Usuario_existente(int ID_usuario){   ///VALIDA QUE EXISTA EL USUARIO
     fclose(archivo);
     return false;
 }
+
 void Modificar_Entrenamiento(){
     Entrenamiento registro;
     char respuesta;
@@ -339,14 +341,13 @@ bool Verificar_ApMedico(int ID_Usuario){
         return 0;
     }
     while(fread(&reg, sizeof (Usuarios),1,p)){
-        if(ID_Usuario==reg.ID && reg.Estado==1){
+        if(ID_Usuario==reg.ID && reg.Apto_Med==1){
             return true;
         }
     }
     fclose(p);
     return false;
 }
-
 
 bool Guardar_Modificacion_Entranamiento(Entrenamiento registro,int posicionID){
     bool grabo;
