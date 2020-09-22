@@ -421,16 +421,16 @@
 
 1600526929 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\configuracion.h
 
-1600526929 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\entrenar.cpp
+1600646915 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\entrenar.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
 	<cstring>
 	"Usuarios.h"
 
-1600536647 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\usuarios.h
+1600646800 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\usuarios.h
 
-1600469473 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\main.cpp
+1600646929 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\main.cpp
 	<ctime>
 	<cstdlib>
 	<cstdio>
@@ -439,7 +439,7 @@
 	<iostream>
 	"Usuarios.h"
 
-1600526929 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\menues.cpp
+1600569719 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\menues.cpp
 	<cstdlib>
 	<cstdio>
 	<cstring>
@@ -448,7 +448,16 @@
 	"Usuarios.h"
 	"configuracion.h"
 
-1600528090 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.cpp
+1600542926 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara\entrenamiento-v09\usuarios.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600528090 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\archivosconfiguraciones.cpp
 	<iostream>
 	<ctime>
 	<time.h>
@@ -456,26 +465,17 @@
 	<stdlib.h>
 	"ArchivosConfiguraciones.h"
 
-1600526929 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.h
+1600526929 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\archivosconfiguraciones.h
 
-1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\configuracion.cpp
+1600526929 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\configuracion.cpp
 	<iostream>
 	<cstdlib>
 	"configuracion.h"
 	"ArchivosConfiguraciones.h"
 
-1600526929 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\configuracion.h
+1600526929 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\configuracion.h
 
-1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\entrenar.cpp
-	<iostream>
-	<cstdlib>
-	<cstdio>
-	<cstring>
-	"Usuarios.h"
-
-1600536647 c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\usuarios.h
-
-1600469473 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\main.cpp
+1600646929 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\main.cpp
 	<ctime>
 	<cstdlib>
 	<cstdio>
@@ -484,7 +484,18 @@
 	<iostream>
 	"Usuarios.h"
 
-1600526929 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\menues.cpp
+1600646800 c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\usuarios.h
+
+1600542926 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\usuarios.cpp
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<clocale>
+	<iostream>
+	"Usuarios.h"
+
+1600656004 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\menues.cpp
 	<cstdlib>
 	<cstdio>
 	<cstring>
@@ -493,12 +504,10 @@
 	"Usuarios.h"
 	"configuracion.h"
 
-1600542926 source:c:\users\hugo\documents\github\laboratorio ii\laboratorio-tp-lara\entrenamiento\usuarios.cpp
-	<ctime>
+1600733362 source:c:\users\hugo\google drive\actual\2020\2020 utn\2do cuatrimestre\laboratorio de computacion ii\primer parcial\laboratorio-tp-lara-1\entrenamiento-v09\entrenar.cpp
+	<iostream>
 	<cstdlib>
 	<cstdio>
 	<cstring>
-	<clocale>
-	<iostream>
 	"Usuarios.h"
 
