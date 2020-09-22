@@ -49,6 +49,7 @@ void Menu();
 void Menu_Usuarios();
 void Menu_Entrenamiento();
 void Menu_Reportes();
+void Menu_Configuracion();
 
 ///     CONTROLES
 bool Control_Fecha(int, int, int);
@@ -70,7 +71,8 @@ Entrenamiento Levantar_Entrenamiento(int,bool *);
 bool Guardar_Modificacion_Entranamiento(Entrenamiento,int);
 bool Verificar_ApMedico(int);
 
-
-
+///     REPORTES
+void Punto_A();
+void Punto_B();
 
 #endif // USUARIOS_H_INCLUDED

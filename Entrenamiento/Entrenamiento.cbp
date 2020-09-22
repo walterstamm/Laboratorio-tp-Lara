@@ -36,11 +36,16 @@
 		<Unit filename="ArchivosConfiguraciones.h" />
 		<Unit filename="Entrenar.cpp" />
 		<Unit filename="Menues.cpp" />
+		<Unit filename="Reportes.cpp" />
 		<Unit filename="Usuarios.cpp" />
 		<Unit filename="Usuarios.h" />
 		<Unit filename="configuracion.cpp" />
 		<Unit filename="configuracion.h" />
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
