@@ -580,3 +580,13 @@
 	"ArchivosConfiguraciones.h"
 	"configuracion.h"
 
+1600546068 source:c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.cpp
+	<iostream>
+	<ctime>
+	<time.h>
+	<string.h>
+	<stdlib.h>
+	"ArchivosConfiguraciones.h"
+
+1600527921 c:\users\walter\documents\github\laboratorio-tp-lara\entrenamiento\archivosconfiguraciones.h
+
